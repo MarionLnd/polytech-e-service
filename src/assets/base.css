@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Ojuju';
+    src: url('fonts/Ojuju-VariableFont_wght.ttf');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins/Poppins-Light.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-VariableFont_wght.ttf');
+  }
+
+  @font-face {
+    font-family: 'DMSans';
+    src: url('fonts/DMSans-VariableFont_opsz\,wght.ttf');
+  }
+
+  @font-face {
+    font-family: 'Questrial';
+    src: url('fonts/Questrial-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('fonts/Urbanist-VariableFont_wght.ttf');
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    'Questrial',
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
