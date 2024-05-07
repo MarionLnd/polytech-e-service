@@ -1,6 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
+  <!-- This form was inspired from an example from the Tailwindcss examples -->
   <div class="isolate bg-white px-6 py-6 sm:py-8 lg:px-8">
     <div
       class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
