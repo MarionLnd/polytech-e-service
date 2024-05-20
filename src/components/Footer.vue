@@ -7,7 +7,9 @@ import FacebookIcon from '@icons/FacebookIcon.vue'
 <template>
   <footer class="flex justify-around p-6 bg-gradient-to-l from-white via-gray-100 to-blue-200">
     <div>
-      <RouterLink to="/"><img src="/images/Logo - société.png" class="logo max-w-xs" /></RouterLink>
+      <RouterLink to="/"
+        ><img :src="'/images/Logo - société.png'" class="logo max-w-xs"
+      /></RouterLink>
     </div>
     <div>
       <p>Plan du site</p>
