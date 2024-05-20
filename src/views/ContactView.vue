@@ -1,12 +1,6 @@
 import { PaperAirplaneIcon } from '@heroicons/vue/24/outline';
-<script>
+<script setup lang="ts">
 import ContactForm from '@components/ContactForm.vue'
-
-export default {
-  components: {
-    ContactForm
-  }
-}
 </script>
 
 <template>
