@@ -5,32 +5,32 @@
 @layer base {
   @font-face {
     font-family: 'Ojuju';
-    src: url('fonts/Ojuju-VariableFont_wght.ttf');
+    src: url('$fonts/Ojuju-VariableFont_wght.ttf');
   }
 
   @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins/Poppins-Light.ttf');
+    src: url('$fonts/Poppins/Poppins-Light.ttf');
   }
 
   @font-face {
     font-family: 'Montserrat';
-    src: url('fonts/Montserrat-VariableFont_wght.ttf');
+    src: url('$fonts/Montserrat-VariableFont_wght.ttf');
   }
 
   @font-face {
     font-family: 'DMSans';
-    src: url('fonts/DMSans-VariableFont_opsz\,wght.ttf');
+    src: url('$fonts/DMSans-VariableFont_opsz,wght.ttf');
   }
 
   @font-face {
     font-family: 'Questrial';
-    src: url('fonts/Questrial-Regular.ttf');
+    src: url('$fonts/Questrial-Regular.ttf');
   }
 
   @font-face {
     font-family: 'Urbanist';
-    src: url('fonts/Urbanist-VariableFont_wght.ttf');
+    src: url('$fonts/Urbanist-VariableFont_wght.ttf');
   }
 }
 
