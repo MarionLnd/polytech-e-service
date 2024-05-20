@@ -2,14 +2,14 @@
 import { MoonIcon, SunIcon } from '@heroicons/vue/24/outline'
 import InstagramIcon from '@icons/InstagramIcon.vue'
 import FacebookIcon from '@icons/FacebookIcon.vue'
+
+import LogoImg from '$images/logo-polytech-service.png'
 </script>
 
 <template>
   <footer class="flex justify-around p-6 bg-gradient-to-l from-white via-gray-100 to-blue-200">
     <div>
-      <RouterLink to="/"
-        ><img :src="'/images/Logo - société.png'" class="logo max-w-xs"
-      /></RouterLink>
+      <RouterLink to="/"><img :src="LogoImg" class="logo max-w-xs" /></RouterLink>
     </div>
     <div>
       <p>Plan du site</p>

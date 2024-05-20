@@ -3,6 +3,10 @@ import { RouterLink } from 'vue-router'
 import { Cog8ToothIcon, InformationCircleIcon } from '@heroicons/vue/24/outline'
 import { WrenchScrewdriverIcon } from '@heroicons/vue/24/outline'
 import { EnvelopeIcon } from '@heroicons/vue/24/outline'
+
+import lightsImg from '$images/home/ampoules.jpg'
+import bubbleHeadImg from '$images/home/bubble-head.jpg'
+import electricalInstallationImg from '$images/home/Installation_Electrique.jpg'
 </script>
 
 <template>
@@ -43,14 +47,14 @@ import { EnvelopeIcon } from '@heroicons/vue/24/outline'
         </div>
 
         <div class="s2-img-div">
-          <img src="/images/home/ampoules.jpg" class="s2-img max-w-3xl rounded-3xl" />
+          <img :src="lightsImg" class="s2-img max-w-3xl rounded-3xl" />
         </div>
       </div>
 
       <div class="flex flex-row justify-around max-h-96">
         <div class="s2-img-div mr-4">
           <!-- TODO Center the image -->
-          <img src="/images/home/bubble-head.jpg" class="s2-img max-w-2xl rounded-3xl" />
+          <img :src="bubbleHeadImg" class="s2-img max-w-2xl rounded-3xl" />
         </div>
         <div class="flex">
           <p class="self-center max-w-2xl text-xl">
@@ -79,10 +83,7 @@ import { EnvelopeIcon } from '@heroicons/vue/24/outline'
         </div>
 
         <div class="s2-img-div">
-          <img
-            src="/images/home/Installation_Electrique.jpg"
-            class="s2-img max-w-2xl rounded-3xl"
-          />
+          <img :src="electricalInstallationImg" class="s2-img max-w-2xl rounded-3xl" />
         </div>
       </div>
     </div>

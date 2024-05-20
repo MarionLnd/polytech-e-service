@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+
+import LogoImg from '$images/logo-polytech-service.png'
 </script>
 
 <template>
   <div class="bg-gradient-to-r from-white via-gray-100 to-blue-200">
     <nav class="flex justify-between">
       <div class="ml-4">
-        <RouterLink to="/"
-          ><img :src="'/images/Logo - société.png'" class="logo max-w-xs"
-        /></RouterLink>
+        <RouterLink to="/"><img :src="LogoImg" class="logo max-w-xs" /></RouterLink>
       </div>
 
       <div class="self-center mr-4">
