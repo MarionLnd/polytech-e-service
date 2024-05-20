@@ -6,7 +6,11 @@ export default {
     './src/views/**/*.{html,js,ts,vue}'
   ],
   theme: {
-    extend: {}
+    extend: {
+      container: {
+        center: true
+      }
+    }
   },
   plugins: []
 }
