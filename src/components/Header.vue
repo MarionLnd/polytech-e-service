@@ -7,7 +7,7 @@ import { RouterLink } from 'vue-router'
     <nav class="flex justify-between">
       <div class="ml-4">
         <RouterLink to="/"
-          ><img src="/images/Logo - société.png" class="logo max-w-xs"
+          ><img :src="'/images/Logo - société.png'" class="logo max-w-xs"
         /></RouterLink>
       </div>
 
