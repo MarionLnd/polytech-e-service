@@ -1,10 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="container sm:my-7">
+  <div class="container sm:my-11">
     <h1 class="uppercase text-4xl font-bold text-center text-blue-500">Nos solutions</h1>
     <div class="flex justify-center gap-x-12 sm:mt-10 divide-x">
-      <div class="basis-8/12 text-justify">
+      <div class="basis-9/12 text-justify">
         <h2 class="uppercase text-xl font-bold text-blue-800 sm:mb-3">Pour professionnels</h2>
         <p>
           Que vous soyez une copropriété, un commerce, des bureaux ou tout autre professionnel,
@@ -26,7 +26,7 @@
         <br />
         <p class="italic">
           Chez
-          <span class="text-blue-500 font-semibold">POLYTECH -E- SERVICES</span>
+          <span class="text-blue-500 font-semibold not-italic">POLYTECH -E- SERVICES</span>
           nous sommes engagés à fournir des solutions électriques durables et respectueuses de
           l’environnement.
         </p>
@@ -34,25 +34,33 @@
         <div>
           <h3 class="uppercase font-bold">Nos solutions</h3>
           <ul class="list-disc list-inside sm:ml-4">
-            <li>Système éclairage (éco détection, LED, …)</li>
+            <li>Système éclairage <span class="italic">(éco détection, LED, …)</span></li>
             <li>
-              Installation purement électrique (création de prise mono ou triphasé, séparation
-              éclairage, …)
+              Installation purement électrique
+              <span class="italic"
+                >(création de prise mono ou triphasé, séparation éclairage, …)</span
+              >
             </li>
             <li>
-              Travaux purement électrique (réhabilitation et mise en sécurité électrique, recherche
-              de panne, diagnostic d’installation, …)
+              Travaux purement électrique
+              <span class="italic"
+                >(réhabilitation et mise en sécurité électrique, recherche de panne, diagnostic
+                d’installation, …)</span
+              >
             </li>
             <li>
-              Installation et travaux informatique/réseaux (câblage réseau, mise au propre et
-              changement de baie informatique, dépannage sur câble réseau, …)
+              Installation et travaux informatique/réseaux
+              <span class="italic"
+                >(câblage réseau, mise au propre et changement de baie informatique, dépannage sur
+                câble réseau, …)</span
+              >
             </li>
             <li>Installation de borne de recharge de véhicule électrique.</li>
           </ul>
         </div>
       </div>
 
-      <div class="text-justify px-12">
+      <div class="basis-6/12 px-12">
         <h2 class="uppercase text-xl font-bold text-blue-800 sm:mb-3">Pour les particuliers</h2>
         <ul class="list-disc list-inside">
           <li>Réhabilitation électrique</li>
@@ -64,25 +72,52 @@
           <li>Coffret de communication</li>
           <li>Borne de recharge pour V.E</li>
         </ul>
-        <p>Quelques tarifs pour particuliers :</p>
+        <br />
+        <p class="font-bold uppercase">Quelques tarifs pour particuliers</p>
         <ul class="list-disc list-inside">
-          <li>Changement de tableau électrique et mise aux normes :</li>
+          <li class="font-bold text-blue-950">
+            Changement de tableau électrique et mise aux normes :
+          </li>
           <ul class="list-disc list-inside ml-6">
-            <li>Tableau 2 rangées à partir de 1080 euros TTC</li>
-            <li>Tableau 3 rangées à partir de 1220 euros TTC</li>
-            <li>Tableau 4 rangées à partir de 1400 euros TTC</li>
-          </ul>
-          <li>Rénovation électrique complète :</li>
-          <ul class="list-disc list-inside ml-6">
-            <li>A partir de 95 euros/m2 TTC pour une installation avant doublage</li>
             <li>
-              A partir de 89 euros/m2 TTC pour une installation saillie/apparent (sous moulure)
+              Tableau 2 rangées à partir de
+              <span class="font-bold text-blue-800">1 080 euros TTC</span>
             </li>
-            <li>A partir de 140 euros/m2 TTC pour une installation encastrée (sous saignée)</li>
+            <li>
+              Tableau 3 rangées à partir de
+              <span class="font-bold text-blue-800">1 220 euros TTC</span>
+            </li>
+            <li>
+              Tableau 4 rangées à partir de
+              <span class="font-bold text-blue-800">1 400 euros TTC</span>
+            </li>
           </ul>
-          <li>Installation borne de recharge de véhicule électriques :</li>
+          <li class="font-bold text-blue-950">Rénovation électrique complète :</li>
           <ul class="list-disc list-inside ml-6">
-            <li>A partir de 990 euros TTC.</li>
+            <li>
+              Installation avant doublage à partir de
+              <span class="font-bold text-blue-800"
+                >95 euros/m<sup class="font-bold">2</sup> TTC</span
+              >
+            </li>
+            <li>
+              Installation saillie/apparent (sous moulure) à partir de
+              <span class="font-bold text-blue-800"
+                >89 euros/m<sup class="font-bold">2</sup> TTC</span
+              >
+            </li>
+            <li>
+              Installation encastrée (sous saignée) à partir de
+              <span class="font-bold text-blue-800"
+                >140 euros/m<sup class="font-bold">2</sup> TTC</span
+              >
+            </li>
+          </ul>
+          <li class="font-bold text-blue-950">
+            Installation borne de recharge de véhicule électriques :
+          </li>
+          <ul class="list-disc list-inside ml-6">
+            <li>A partir de <span class="font-bold text-blue-800">990 euros TTC</span></li>
           </ul>
         </ul>
       </div>
@@ -91,8 +126,10 @@
     <p class="sm:mt-7">
       <span class="font-bold">Des projets ?</span> Contactez-nous dès maintenant et soumettez-nous
       votre demande via le
-      <a class="underline font-bold text-blue-500 hover:text-blue-800 hover:cursor-pointer"
-        >formulaire de contact prévu</a
+      <RouterLink
+        to="/contact"
+        class="underline font-bold text-blue-500 hover:text-blue-800 hover:cursor-pointer"
+        >formulaire de contact prévu</RouterLink
       >. Nous vous répondrons dans les meilleurs délais afin de vous proposer les solutions les plus
       adaptées, en fonction de votre localisation.
     </p>
