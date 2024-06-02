@@ -10,7 +10,7 @@ import electricalInstallationImg from '$images/home/Installation_Electrique.jpg'
 </script>
 
 <template>
-  <main class="flex container mx-auto my-14 text-justify flex-col">
+  <main class="flex container my-14 text-justify flex-col">
     <div class="section-1 flex flex-col p-14">
       <div class="p-5 self-center">
         <p>
