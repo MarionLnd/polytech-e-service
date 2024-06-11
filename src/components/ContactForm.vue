@@ -1,6 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
+  <!-- This form was inspired from an example from the Tailwindcss examples -->
   <div class="isolate bg-white px-6 py-6 sm:py-8 lg:px-8">
     <div
       class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
@@ -17,9 +18,9 @@
     <form action="#" method="POST" class="mx-auto mt-6 max-w-xl sm:mt-12">
       <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
         <div>
-          <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900"
-            >Prénom</label
-          >
+          <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">
+            Prénom <span class="text-red-500 font-bold">*</span>
+          </label>
           <div class="mt-2.5">
             <input
               type="text"
@@ -31,9 +32,9 @@
           </div>
         </div>
         <div>
-          <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900"
-            >Nom</label
-          >
+          <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">
+            Nom <span class="text-red-500 font-bold">*</span>
+          </label>
           <div class="mt-2.5">
             <input
               type="text"
@@ -46,7 +47,7 @@
         </div>
         <div class="sm:col-span-2">
           <label for="company" class="block text-sm font-semibold leading-6 text-gray-900"
-            >Company</label
+            >Société</label
           >
           <div class="mt-2.5">
             <input
@@ -59,9 +60,9 @@
           </div>
         </div>
         <div class="sm:col-span-2">
-          <label for="email" class="block text-sm font-semibold leading-6 text-gray-900"
-            >Email</label
-          >
+          <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">
+            Email <span class="text-red-500 font-bold">*</span>
+          </label>
           <div class="mt-2.5">
             <input
               type="email"
@@ -73,9 +74,9 @@
           </div>
         </div>
         <div class="sm:col-span-2">
-          <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900"
-            >Phone number</label
-          >
+          <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">
+            Numéro de téléphone <span class="text-red-500 font-bold">*</span>
+          </label>
           <div class="relative mt-2.5">
             <div class="absolute inset-y-0 left-0 flex items-center">
               <label for="country" class="sr-only">Country</label>
@@ -99,9 +100,9 @@
           </div>
         </div>
         <div class="sm:col-span-2">
-          <label for="email" class="block text-sm font-semibold leading-6 text-gray-900"
-            >Objet</label
-          >
+          <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">
+            Objet <span class="text-red-500 font-bold">*</span>
+          </label>
           <div class="mt-2.5">
             <input
               type="text"
@@ -112,9 +113,9 @@
           </div>
         </div>
         <div class="sm:col-span-2">
-          <label for="message" class="block text-sm font-semibold leading-6 text-gray-900"
-            >Message</label
-          >
+          <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">
+            Message <span class="text-red-500 font-bold">*</span>
+          </label>
           <div class="mt-2.5">
             <textarea
               name="message"
@@ -124,36 +125,13 @@
             ></textarea>
           </div>
         </div>
-        <div class="flex gap-x-4 sm:col-span-2">
-          <div class="flex h-6 items-center">
-            <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
-            <button
-              type="button"
-              class="bg-gray-200 flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              role="switch"
-              aria-checked="false"
-              aria-labelledby="switch-1-label"
-            >
-              <span class="sr-only">Agree to policies</span>
-              <!-- Enabled: "translate-x-3.5", Not Enabled: "translate-x-0" -->
-              <span
-                aria-hidden="true"
-                class="translate-x-0 h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"
-              ></span>
-            </button>
-          </div>
-          <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
-            By selecting this, you agree to our
-            <a href="#" class="font-semibold text-indigo-600">privacy&nbsp;policy</a>.
-          </label>
-        </div>
       </div>
       <div class="mt-10">
         <button
           type="submit"
-          class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          class="block w-full rounded-md bg-blue-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
         >
-          Let's talk
+          Envoyer
         </button>
       </div>
     </form>
