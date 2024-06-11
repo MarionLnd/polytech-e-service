@@ -1,6 +1,7 @@
 import { PaperAirplaneIcon } from '@heroicons/vue/24/outline';
 <script setup lang="ts">
 import ContactForm from '@components/ContactForm.vue'
+import CalendlyIntegration from '@components/CalendlyIntegration.vue'
 </script>
 
 <template>
@@ -9,7 +10,7 @@ import ContactForm from '@components/ContactForm.vue'
       <div class="p-8">
         <ContactForm />
       </div>
-      <div class="calendly-container p-8">CALENDLY</div>
+      <div class="calendly-container p-8"><CalendlyIntegration /></div>
     </div>
   </div>
 </template>
